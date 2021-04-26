@@ -144,7 +144,11 @@ body {
     }
 }
 
-
+.contenidoCentrado {
+    @include itemsCentrados;
+    width: 100%;
+    
+}
 
 /*Tienda Style*/
 
