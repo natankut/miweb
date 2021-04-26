@@ -1,0 +1,16 @@
+@mixin contenedorMobile-Img {
+    
+    width: 100%;
+    height: 20vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+@mixin itemsCentrados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center    
+}

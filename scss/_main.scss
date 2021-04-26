@@ -1,0 +1,205 @@
+body {
+    background-color: $fondo;
+}
+
+#header {
+    display: flex;
+    background-color: $fondo-header;
+   
+
+    .iconoGlobo {
+        width: 50px; 
+    }
+    
+    .miNavBar {
+       
+    color:$texto;
+    font-weight: $font-regular;
+    text-decoration: none;
+
+        &:hover {
+            border-bottom: solid;
+    
+        }
+    }
+            
+} 
+
+.btn-contact {
+    position: absolute;
+    right: 10px;
+}   
+
+.imagenCarrusel {
+    width: $tamaño-carrusel;
+}
+
+.miNavBar_boton {
+    border: 1px solid;
+    border-radius: .25rem;
+    background-color: none;
+}
+.contenedor_mobile {
+    display: none;
+
+}
+.Carrousel{
+    margin-top: 98px;
+    
+}
+
+@media (max-width: 720px) {
+    .btn-contact {
+        position: relative;
+        right: 0;
+    }
+    .Carrousel{
+        display: none;
+    }
+    .contenedor_mobile {
+        display: block;
+        text-align: center;
+        margin-top: 98px;
+    
+        .contenedor_mobile-image {
+
+            @include contenedorMobile-Img;
+            background-image: url(../images/pastasfrescas-mobile.jpg);
+        }
+            
+        .contenedor_mobile-image2 {
+
+            @include contenedorMobile-Img;
+            background-image: url(../images/piza-mobile.jpg);
+            
+        }
+        .contenedor_mobile-image3 {
+            @include contenedorMobile-Img;
+            background-image: url(../images/tapasss-mobile.jpg);
+            
+        }
+        
+    } 
+}
+
+#footer {
+    background-color: $fondo-header;
+    
+    a {
+        color: black;
+    }
+    .bi-telegram{
+        display: block;
+        color: black;
+    }
+    
+    .list_socialMedia {
+        border: 0.5px solid;
+        border-right: black;
+        border-left: black;
+        display: flex;
+        justify-content: space-around; 
+        list-style: none;
+        padding: 20px;
+        
+    }
+}
+
+/* RECETAS STYLE */
+
+.marginTop {
+    margin-top: $margin-top;
+   
+}
+
+.contenedorImg img{
+    &:hover {
+        opacity: 0.6;
+
+    }
+}
+
+.bannerRecetas {
+    @include contenedorMobile-Img;
+    background-image: url(../images/recetas/banner4.jpg);
+    height: 85vh;
+   
+    .cuadradoBanner {
+        margin: 1vh;
+        position: absolute;
+        display: flex;
+        width: 45vh;
+        right: 0px;
+        background-color: #fafafa;
+        flex-direction: column;
+        justify-content: space-around;
+
+        span {
+            color:#f95500;
+            font-size: 1.5em;
+        }
+        .mensaje2 {
+            color: #a769af;        
+        }
+    }
+}
+
+
+
+/*Tienda Style*/
+
+.bannerTienda {
+
+    @include contenedorMobile-Img;
+    background-image: url(../images/recetas/banner3.jpg);
+    height: 85vh;
+
+    .cuadradoBanner {
+        margin: 1vh;
+        position: absolute;
+        display: flex;
+        width: 45vh;
+        right: 0px;
+        background-color: #fafafa;
+        flex-direction: column;
+        justify-content: space-around;
+
+        span {
+            color:#f95500;
+            font-size: 1.5em;
+        }
+        .mensaje2 {
+            color: #a769af;        
+        }
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+        .bannerTienda{
+        @include contenedorMobile-Img;
+        background-image: url(../images/recetas/banner3.jpg);
+        height: 85vh;
+
+        .cuadradoBanner {
+            margin: 1vh;
+            position: absolute;
+            display: flex;
+            width: 45vh;
+            right: -2px;
+            background-color: #fafafa;
+            flex-direction: column;
+            justify-content: space-around;
+
+            span {
+                color:#f95500;
+                font-size: 1.5em;
+            }
+            .mensaje2 {
+                color: #a769af;        
+            }
+        }
+    }
+}
