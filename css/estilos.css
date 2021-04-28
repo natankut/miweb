@@ -264,4 +264,44 @@ body {
     color: #a769af;
   }
 }
+
+/*Estilo Menu*/
+.mainContainer {
+  background-color: #efede4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainContainer .plato {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainContainer img {
+  width: 50%;
+  max-width: 460px;
+}
+
+.mainContainer .infoPlato {
+  color: red;
+}
+
+.mainContainer .infoPlato h4 {
+  text-transform: uppercase;
+  border-bottom: solid 1px #cdc59a;
+  margin-bottom: 22px;
+  padding-bottom: 22px;
+  margin-top: 22px;
+}
 /*# sourceMappingURL=estilos.css.map */
