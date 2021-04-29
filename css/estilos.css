@@ -266,7 +266,7 @@ body {
 }
 
 /*Estilo Menu*/
-.bannerTienda {
+.bannerMenu {
   width: 100%;
   height: 20vh;
   background-repeat: no-repeat;
@@ -276,7 +276,7 @@ body {
   height: 85vh;
 }
 
-.bannerTienda .cuadradoBanner {
+.bannerMenu .cuadradoBanner {
   margin: 1vh;
   position: absolute;
   display: -webkit-box;
@@ -293,12 +293,12 @@ body {
       justify-content: space-around;
 }
 
-.bannerTienda .cuadradoBanner span {
+.bannerMenu .cuadradoBanner span {
   color: #f95500;
   font-size: 1.5em;
 }
 
-.bannerTienda .cuadradoBanner .mensaje2 {
+.bannerMenu .cuadradoBanner .mensaje2 {
   color: #a769af;
 }
 
