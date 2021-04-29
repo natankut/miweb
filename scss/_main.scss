@@ -18,7 +18,7 @@ body {
     text-decoration: none;
 
         &:hover {
-            border-bottom: solid;
+            border-bottom: solid 2px black;
     
         }
     }
@@ -210,31 +210,84 @@ body {
 
 /*Estilo Menu*/
 
+.bannerTienda {
+
+    @include contenedorMobile-Img;
+    background-image: url(../images/menu/bannerrecetas.jpg);
+    height: 85vh;
+
+    .cuadradoBanner {
+        margin: 1vh;
+        position: absolute;
+        display: flex;
+        width: 45vh;
+        right: 0px;
+        background-color: #fafafa;
+        flex-direction: column;
+        justify-content: space-around;
+
+        span {
+            color:#f95500;
+            font-size: 1.5em;
+        }
+        .mensaje2 {
+            color: #a769af;        
+        }
+    }
+
+}
 .mainContainer {
+
     background-color: #efede4;
     display: flex;
     align-items: center;
+    border-top: solid 3px #e1dbc1;
+    border-bottom: solid 3px #e1dbc1 ;
+    justify-content: space-around;
     
+
     .plato{
         display: flex;
         align-items: center;
         justify-content: center;
+        
+
     }
     
     img { 
         width: 50%;
-        max-width: 460px;    
+        max-width: 460px;
+          
+        &:hover {
+            
+            transform: scale(1.05);
+            transition: transform .5s;
+        }
     }   
     
    .infoPlato {
     
-    color: red;
+    color: #a81e22;
+    
         h4 {
         text-transform: uppercase;
         border-bottom: solid 1px #cdc59a;
         margin-bottom: 22px;
         padding-bottom: 22px;
         margin-top: 22px;
+        color: #333333;
         }   
    }
+        
 }
+.contenedorReverse {
+    flex-direction: row-reverse;
+    align-items:center; 
+    background-color: #fafafa;
+      
+}
+@media (max-width: 720px) {
+    .mainContainer {
+        flex-direction: column;
+    }
+}    

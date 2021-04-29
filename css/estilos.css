@@ -40,7 +40,7 @@ body {
 }
 
 #header .miNavBar:hover {
-  border-bottom: solid;
+  border-bottom: solid 2px black;
 }
 
 .btn-contact {
@@ -266,6 +266,42 @@ body {
 }
 
 /*Estilo Menu*/
+.bannerTienda {
+  width: 100%;
+  height: 20vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/menu/bannerrecetas.jpg);
+  height: 85vh;
+}
+
+.bannerTienda .cuadradoBanner {
+  margin: 1vh;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 45vh;
+  right: 0px;
+  background-color: #fafafa;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.bannerTienda .cuadradoBanner span {
+  color: #f95500;
+  font-size: 1.5em;
+}
+
+.bannerTienda .cuadradoBanner .mensaje2 {
+  color: #a769af;
+}
+
 .mainContainer {
   background-color: #efede4;
   display: -webkit-box;
@@ -274,6 +310,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-top: solid 3px #e1dbc1;
+  border-bottom: solid 3px #e1dbc1;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .mainContainer .plato {
@@ -293,8 +333,17 @@ body {
   max-width: 460px;
 }
 
+.mainContainer img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
 .mainContainer .infoPlato {
-  color: red;
+  color: #a81e22;
 }
 
 .mainContainer .infoPlato h4 {
@@ -303,5 +352,26 @@ body {
   margin-bottom: 22px;
   padding-bottom: 22px;
   margin-top: 22px;
+  color: #333333;
+}
+
+.contenedorReverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fafafa;
+}
+
+@media (max-width: 720px) {
+  .mainContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */
