@@ -334,12 +334,10 @@ body {
 }
 
 .mainContainer img:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  -webkit-transition: -webkit-transform .5s;
-  transition: -webkit-transform .5s;
-  transition: transform .5s;
-  transition: transform .5s, -webkit-transform .5s;
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+  -webkit-transition: all 0.5s ease-in-out 0.05s;
+  transition: all 0.5s ease-in-out 0.05s;
 }
 
 .mainContainer .infoPlato {

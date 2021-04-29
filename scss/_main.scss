@@ -236,6 +236,7 @@ body {
     }
 
 }
+
 .mainContainer {
 
     background-color: #efede4;
@@ -260,8 +261,8 @@ body {
           
         &:hover {
             
-            transform: scale(1.05);
-            transition: transform .5s;
+            transform: scale(1.04);
+            transition: all 0.5s ease-in-out 0.05s;
         }
     }   
     
@@ -280,6 +281,7 @@ body {
    }
         
 }
+
 .contenedorReverse {
     flex-direction: row-reverse;
     align-items:center; 
