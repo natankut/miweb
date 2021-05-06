@@ -130,6 +130,10 @@ body {
   padding: 20px;
 }
 
+#footer .list_socialMedia a {
+  font-size: 20px;
+}
+
 /* RECETAS STYLE */
 .marginTop {
   margin-top: 98px;
