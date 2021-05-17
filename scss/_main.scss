@@ -21,12 +21,16 @@ body {
     color:$texto;
     font-weight: $font-regular;
     text-decoration: none;
+    display: inline-block;
 
         &:hover {
             border-bottom: solid 1px black;
     
         }
-        
+        span {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
     }
             
 } 
