@@ -40,77 +40,12 @@
 				  <span><a class="nav-link miNavBar navbar_menu--item" href="pages/tienda.html">Tienda ingredientes</a></span>
 				  <span><a class="nav-link miNavBar navbar_menu--item" href="pages/recetas.html"><span>Nuestras recetas</a></span>
           
-      <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ventanaModal">
-  Contacto
-</button>
-          <!-- Modal -->
-<section class="container">
-  <div class="modal fade" id="ventanaModal" tabindex="-1" role="dialog" aria-labelledby="tituloVentana" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 id="tituloVentana">Contacto</h5>
-          <button class="close" data-dismiss="modal" aria-label="cerrar">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
+        <!-- Button trigger modal -->
 
-        <div class="modal-body">
-          <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam voluptatibus illo, illum accusantium sequi quasi voluptates porro iusto quidem voluptatem minima? Impedit odit dolorem quos molestiae minima rem ratione quis!</h6>
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-warning" type="button" data-dismiss="modal">
-            cerrar
-          </button>
-        </div>
-      </div>
-    </div>
-  </div> 
-</section>
-          
-            <!--<div class="btn-contact dropleft">
-              <button class="btn btn-secondary " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Contacto
-              </button>
-          
-              <div class="dropdown-menu botonContactos_dropdown">
+        <button type="button" class="btn btn-contact" data-toggle="modal" data-target="#ventanaModal">
+          Reservas
+        </button>   
 
-                <form class="px-3">
-                  <div class="form-group mt-0 mb-1">
-                    <label for="nombre_completo"></label>
-                    <input type="text" name="nombre_completo" placeholder="Nombre completo">
-                  </div>
-                  <div class="form-group mt-0 mb-1">
-                    <label for="email"></label>
-                    <input type="email" name="email" placeholder="Ingrese su mail">
-                  </div>
-                  <div class="form-group mt-0 ml-1">
-                    <textarea class="w-100"name="campo_area" placeholder="Mensaje"></textarea>
-                  </div>
-                  <div class="form-group">
-                    <div class="form-check ml-0 pl-0">
-                      <label for="Seccion_Preferida">Seccion preferida</label>
-                        <select class="botonContacto"> 
-                          <option value="1">Recetas</option>
-                          <option value="2">Tienda de ingredientes</option>
-                          <option value="3">Menu</option>
-                        </select>	
-                    </div>
-                  </div>
-                  <div class="form-group pl-0">
-                    <div class="form-check ml-1 pl-0">
-                      <label for="Newsletter">Suscribite a nuestro Newsletter</label>
-                      <label for="box1">SI</label>
-                      <input type="radio" name="news" id="box1" value="si">
-                      <label for="box2">NO</label>
-                      <input type="radio" name="news" id="box2" value="no">
-                    </div>
-                  </div>  	
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>
-              </div>
-          </div>-->
       </div>  
     </div>  
   </nav>
@@ -303,7 +238,61 @@
     </div>
   </div>  
 </footer>
- 
+  
+
+<!-- Modal -->
+<section class="container">
+  <div class="modal fade" id="ventanaModal" tabindex="-1" role="dialog" aria-labelledby="tituloVentana" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 id="tituloVentana">Reserva tu mesa</h5>
+          <button class="close" data-dismiss="modal" aria-label="cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          
+            <form class="d-flex flex-column">
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Nombre completo</label>
+                <input class="w-100 border rounded" type="email" class="form-control" id="exampleFormControlInput1">
+              </div>
+             
+              <div class="form-group d-flex flex-column my-2">
+                <label for="exampleFormControlInput1">Telefono de Contacto</label>
+                <input class="border rounded" type="telefono" class="form-control " id="exampleFormControlInput1">
+              </div>
+
+              <select class="form-control form-control-sm my-4 w-100 rounded">
+                <option>Horario de reserva</option>
+                <option>12:30 a 14:30</option>
+                <option>14:30 a 16:00</option>
+                <option>20:00 a 21:30</option>
+                <option>21:30 a 23:00</option>
+              </select>
+              
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Comentarios</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </form>
+
+        <div class="modal-footer">
+          <button class="btn btn-warning" type="button" data-dismiss="modal">
+           Enviar
+          </button>
+          <button class="btn btn-warning" type="button" data-dismiss="modal">
+            Cerrar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div> 
+</section>
+
+
 <!--Scripts-->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

@@ -57,6 +57,13 @@ body {
 .btn-contact {
   position: absolute;
   right: 10px;
+  background-color: #7c9473;
+  width: 125px;
+  border: #fafafa;
+}
+
+.btn-contact:hover {
+  border: solid 1px whitesmoke;
 }
 
 .imagenCarrusel {
@@ -71,10 +78,12 @@ body {
   margin-top: 98px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   .btn-contact {
     position: relative;
     right: 0;
+    display: inline-block;
+    width: 125px;
   }
   .Carrousel {
     display: none;
@@ -274,7 +283,7 @@ body {
   }
 }
 
-/*Estilo Menu*/
+/*Estilo Carta*/
 .bannerMenu {
   width: 100%;
   height: 20vh;
@@ -380,5 +389,14 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+/*  Formulario Reserva style  */
+.form-group {
+  margin: 0;
+}
+
+#exampleFormControlTextarea1 {
+  resize: none;
 }
 /*# sourceMappingURL=estilos.css.map */
