@@ -42,7 +42,7 @@ body {
     width: 125px;
     border: #fafafa;
     &:hover {
-        
+
         border: solid 1px whitesmoke;
         
     }
@@ -104,19 +104,27 @@ body {
 #footer {
     background-color: $fondo-header;
     
-    a {
-        color: black;
-        
+    .colorFooter {
+
+        color:$texto;
+
+        span {
+            color: $texto;
+            
+        }
+        a{
+            text-decoration: none;
+        }    
+    
     }
-    .bi-telegram{
-        display: block;
-        color: black;
-    }
+     
+       
+    
     
     .list_socialMedia {
         border: 0.5px solid;
-        border-right: black;
-        border-left: black;
+        border-right: #333;
+        border-left: #333;
         display: flex;
         justify-content: space-around; 
         list-style: none;
@@ -124,6 +132,8 @@ body {
 
         a {
             font-size: 20px;
+            color:$texto;
+            
         }
 
     }
@@ -137,6 +147,9 @@ body {
 }
 
 .contenedorImg img{
+
+    height: auto;
+    
     &:hover {
         opacity: 0.6;
 

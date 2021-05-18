@@ -123,19 +123,22 @@ body {
   background-color: #cfdac8;
 }
 
-#footer a {
-  color: black;
+#footer .colorFooter {
+  color: #333;
 }
 
-#footer .bi-telegram {
-  display: block;
-  color: black;
+#footer .colorFooter span {
+  color: #333;
+}
+
+#footer .colorFooter a {
+  text-decoration: none;
 }
 
 #footer .list_socialMedia {
   border: 0.5px solid;
-  border-right: black;
-  border-left: black;
+  border-right: #333;
+  border-left: #333;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,11 +150,16 @@ body {
 
 #footer .list_socialMedia a {
   font-size: 20px;
+  color: #333;
 }
 
 /* RECETAS STYLE */
 .marginTop {
   margin-top: 98px;
+}
+
+.contenedorImg img {
+  height: auto;
 }
 
 .contenedorImg img:hover {
