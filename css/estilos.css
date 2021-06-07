@@ -54,6 +54,17 @@ body {
   margin-bottom: 10px;
 }
 
+.bi.bi-cart {
+  font-size: 35px;
+  position: absolute;
+  right: 15px;
+}
+
+h6 {
+  position: absolute;
+  right: 150px;
+}
+
 .btn-contact {
   position: absolute;
   right: 10px;
@@ -79,6 +90,15 @@ body {
 }
 
 @media (max-width: 990px) {
+  .bi.bi-cart {
+    font-size: 35px;
+    position: fixed;
+    right: 25px;
+  }
+  h6 {
+    position: fixed;
+    right: 10px;
+  }
   .btn-contact {
     position: relative;
     right: 0;
