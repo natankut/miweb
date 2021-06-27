@@ -33,7 +33,7 @@
     <nav id="header" class="navbar navbar-expand-lg fixed-top miNavBar">
       <a class="navbar-brand miNavBar_logo" href="index.html"><img class="iconoGlobo" src="images/iconoglobo.png"></a>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      <button id="hambur" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon miNavBarfondo"></span>
       </button>
@@ -45,10 +45,32 @@
           <span><a class="nav-link miNavBar navbar_menu--item" href="pages/tienda.html">Tienda ingredientes</a></span>
           <span><a class="nav-link miNavBar navbar_menu--item" href="pages/recetas.html"><span>Nuestras
                 recetas</a></span>
-          <h6 class="d-flex">
-            <button id="mostrar" class="btn p-0 bi bi-cart"></button>
-            <span id="notif" class="badge badge-secondary"></span>
-          </h6>
+
+          <div id="carrito" class="dropleft">
+
+            <button class="btn p-0 bi bi-cart" type="button">
+            </button>
+
+            <div id="tablaProductos" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <table>
+                <thead>
+                  <tr id="tablaInterior">
+                    <th></th>
+                    <th class="p-2">Producto</th>
+                    <th class="p-2">Precio</th>
+                  </tr>
+                <tbody id="desplegable" class="m-1">
+
+                </tbody>
+                </thead>
+              </table>
+              <button id="vaciar" class="btn btn-danger m-1">vaciar</button>
+              <span id="total"></span>
+            </div>
+          </div>
+
+          <span id="notif" class="badge badge-secondary"></span>
+
 
           <!-- Button trigger modal -->
 
@@ -59,7 +81,6 @@
         </div>
       </div>
     </nav>
-
     <!--FIN NAVBAR-->
 
     <!--INICIO CARROUSEL-->
@@ -121,13 +142,16 @@
     <!--FIN CONTENEDOR MOBILE-->
 
     <!--TIENDA PRODUCTOS DESTACADOS-->
+    <div class=" container weeklyProduct type-bold mb-4 mt-4">
+      <h3>Ingredientes destacados de la semana</h3>
+    </div>
+    <div id="productos" class="container row contenedorImg m-auto">
+    </div>
 
-    <section>
+    <!--<section>
       <div class="container mt-5 contenedorImg">
-        <div class="weeklyProduct type-bold">
-          <h3>Ingredientes destacados de la semana</h3>
-        </div>
-        <div class="row mt-4">
+        
+        <div id="productos" class="row mt-4">
           <div class="col-sm-12 col-md-6 col-lg-4 d-flex">
             <div class="card mb-3 shadow">
               <img src="images/tienda/aceite-oliva.jpg" class="card-img-top" alt="aceite-oliva">
@@ -152,12 +176,10 @@
                 <p class="card-text">Un tercio de un aguacate mediano (50 g) tiene 80 calorías y aporta casi 20
                   vitaminas y minerales, lo que lo convierte en una excelente opción de alimentos ricos en nutrientes.
                   El aguacate es prácticamente la única fruta que contiene grasas monoinsaturadas saludables para el
-                  corazón, ¡grasas buenas!</p>
-
+                  corazón.</p>
                 <div class="d-flex justify-content-between">
                   <p class="card-text"><small class="text-muted">$350 c/u</small></p>
-                  <button type="button" id="agregarCarrito" class="btn btn-secondary "><i
-                      class="bi bi-cart-plus "></i></button>
+                  <a type="button" id="agregarCarrito" class="bi bi-cart-plus btn btn-secondary "></a>
                 </div>
               </div>
             </div>
@@ -181,8 +203,7 @@
               <img src="images/tienda/quacker.jpg" class="card-img-top" alt="avena">
               <div class="card-body d-flex flex-column justify-content-between">
                 <h5 class="card-title">Avena Quaker Premium</h5>
-                <p class="card-text">El desayuno es la primera comida del día. La palabra en castellano se refiere a
-                  romper el período de ayuno de la noche anterior. Una buena manera de agregar nutrientes es la avena.
+                <p class="card-text">El desayuno es la primera comida del día. La palabra en castellano se refiere a romper el período de ayuno de la noche anterior. Una buena manera de agregar nutrientes es la avena.
                 </p>
                 <p class="card-text"><small class="text-muted">$500</small></p>
               </div>
@@ -213,11 +234,11 @@
               </div>
             </div>
           </div>
-
-        </div>
-      </div>
+        
+    </div>
+    </div>
     </section>
-
+  -->
     <!--Receta Destacada-->
     <article>
       <div class="container mt-5 containerReceipt ">
@@ -254,7 +275,7 @@
             <a href="#"><span class="bi-whatsapp"> Nuestro WhatsApp</span></a>
             <a href="#"><span class="bi bi-telegram"> Sumate a nuestro telegram para recetas diarias</span></a>
           </div>
-          <div class="list">
+          <div class="list p-0">
             <ul class="list_socialMedia mt-4">
 
               <a href="#" class="bi bi-instagram list_socialMedia-img"></a>
@@ -323,9 +344,7 @@
 
     <!--Scripts-->
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
       integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
       crossorigin="anonymous"></script>

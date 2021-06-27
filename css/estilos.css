@@ -60,9 +60,31 @@ body {
   right: 15px;
 }
 
-h6 {
+#carrito {
   position: absolute;
   right: 150px;
+}
+
+#carrito #tablaProductos {
+  right: 60px;
+}
+
+#notif {
+  position: absolute;
+  right: 145px;
+}
+
+#desplegable {
+  background-color: #fafafa;
+}
+
+#desplegable img {
+  margin: 5px;
+  width: 40px;
+}
+
+#tablaProductos {
+  min-width: 18rem;
 }
 
 .btn-contact {
@@ -90,14 +112,22 @@ h6 {
 }
 
 @media (max-width: 990px) {
+  #carrito {
+    position: absolute;
+    right: 150px;
+  }
+  #carrito #tablaProductos {
+    right: -87px;
+    position: absolute;
+  }
+  #notif {
+    position: absolute;
+    right: 10px;
+  }
   .bi.bi-cart {
     font-size: 35px;
     position: fixed;
     right: 25px;
-  }
-  h6 {
-    position: fixed;
-    right: 10px;
   }
   .btn-contact {
     position: relative;
@@ -277,6 +307,10 @@ h6 {
 }
 
 @media (max-width: 576px) {
+  #carrito {
+    position: absolute;
+    right: 150px;
+  }
   .bannerTienda {
     width: 100%;
     height: 20vh;

@@ -1,3 +1,4 @@
+  
 body {
     background-color: $fondo;
 }
@@ -40,12 +41,32 @@ body {
     right: 15px;
 }
    
-h6 {
+#carrito {
     position: absolute;
     right: 150px;
+
+    #tablaProductos{
+        right:60px;
+    }
 }
+#notif {
+    position: absolute;
+    right: 145px;
+} 
 
+#desplegable {
+    
+    
+    img {
+        margin: 5px;
+        width: 40px;
+    }
 
+    background-color: $fondo;
+}
+#tablaProductos{
+    min-width: 18rem;
+}
 .btn-contact {
     position: absolute;
     right: 10px;
@@ -74,16 +95,25 @@ h6 {
 }
 
 @media (max-width: 990px) {
-
+    #carrito {
+        position: absolute;
+        right: 150px;
+        #tablaProductos {
+            right: -87px;
+            position: absolute;
+        }
+    
+    }
+    #notif {
+        position: absolute;
+        right:10px;
+    }
     .bi.bi-cart {
         font-size: 35px;
         position: fixed;
         right: 25px;
     }
-    h6 {
-        position: fixed;
-        right: 10px;
-    }
+    
     .btn-contact {
         position: relative;
         right: 0;
@@ -240,6 +270,11 @@ h6 {
 
 @media (max-width: 576px) {
 
+    #carrito {
+        position: absolute;
+        right: 150px;
+    
+    }
         .bannerTienda{
         @include contenedorMobile-Img;
         background-image: url(../images/recetas/banner3.jpg);
