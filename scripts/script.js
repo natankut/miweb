@@ -2,42 +2,42 @@ const productos = [
     {
         id: 0,
         titulo: 'Aceite de oliva Barhein',
-        imagen: '../images/tienda/aceite-oliva.jpg',
+        imagen: 'images/tienda/aceite-oliva.jpg',
         descripcion: 'El Aceite de Oliva Extra Virgen Barhein se extrae cuidadosamente del primer proceso de prensado en frío de aceitunas seleccionadas de calidad.',
         precio: 1500
     },
     {
         id: 1,
         titulo: 'Palta Hass',
-        imagen: '../images/tienda/avocado.jpg',
+        imagen: 'images/tienda/avocado.jpg',
         descripcion: 'Un tercio de un aguacate mediano (50 g) tiene 80 calorías y aporta casi 20 vitaminas y minerales, lo que lo convierte en una excelente opción de alimentos ricos en nutrientes. El aguacate es prácticamente la única fruta que contiene grasas monoinsaturadas saludables para el corazón.',
         precio: 250,
     },
     {
         id: 2,
         titulo: 'Lentejas arabes',
-        imagen: '../images/tienda/lentejas-arabes.jpg',
+        imagen: 'images/tienda/lentejas-arabes.jpg',
         descripcion: 'El maíz es fuente de antioxidantes que combaten los radicales libres y el envejecimiento celular. Rico en fibra e hidratos de carbono el maíz es saciante y ayuda a controlar nuestro apetito.',
         precio: 500,
     },
     {
         id: 3,
         titulo: 'Avena Quaker Premium',
-        imagen: '../images/tienda/quacker.jpg',
+        imagen: 'images/tienda/quacker.jpg',
         descripcion: 'El desayuno es la primera comida del día. La palabra en castellano se refiere a romper el período de ayuno de la noche anterior. Una buena manera de agregar nutrientes es la avena.',
         precio: 350,
     },
     {
         id: 4,
         titulo: 'Mayonesa Heinz',
-        imagen: '../images/tienda/mayonesa.jpg',
+        imagen: 'images/tienda/mayonesa.jpg',
         descripcion: 'Condimento o aderezo frío espeso que generalmente se usa en sándwiches y ensaladas compuestas o en papas fritas.',
         precio: 300,
     },
     {
         id: 5,
         titulo: 'Tomate plum fresco',
-        imagen: '../images/tienda/tomate.jpg',
+        imagen: 'images/tienda/tomate.jpg',
         descripcion: 'El tomate es la verdura comestible, a menudo roja, de la planta Solanum lycopersicum, comúnmente conocida como planta de tomate. La planta pertenece a la familia de las solanáceas, las solanáceas. La especie se originó en el oeste de América del Sur.',
         precio: 150,
     },
@@ -57,6 +57,7 @@ function agregarCarrito(prod) {
     }
 }*/
 
+const URLJSON = "../base.json";
 
 $(document).ready(function () {
 
@@ -76,6 +77,7 @@ $(document).ready(function () {
     }
 
     const listaProductos = $('#productos');
+    $.getJSON(URLJSON,)
     $.each(productos, function (_i, prod) {
 
         let card = document.createElement('div')
@@ -125,6 +127,7 @@ $(document).ready(function () {
 
         var carrito2 = JSON.parse(localStorage.getItem('cart'));
         $('#desplegable').empty();
+
         $.each(carrito2, function (i, prod) {
 
 
