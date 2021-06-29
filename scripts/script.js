@@ -130,11 +130,11 @@ $(document).ready(function () {
 
 
             let muestra = document.createElement('tr');
-            muestra.classList.add('w-100');
+            muestra.classList.add('w-100', 'cart-contain');
             muestra.innerHTML =
                 `
                 <td><img src="${prod.imagen}"></td><td>${prod.titulo}</td><td>$${prod.precio}</td>
-    
+                <a class=cart-item id="prod-${prod.id}"" href="#"><i class=" bi bi-x"></i</a>
                 `
             $('#desplegable').prepend(muestra);
 
@@ -143,10 +143,14 @@ $(document).ready(function () {
         $('#total') // toy laburando aca
 
         $('#tablaProductos').slideToggle(500)
+
+        var $cart_item = $('.cart-contain').find('.cart-item');
+
     });
 
-
 });
+
+
 
 //$("#carrito").hide();
 
