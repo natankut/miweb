@@ -41,11 +41,10 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 
         <div class="navbar-nav miNavBar_menu">
-          <span><a class="nav-link miNavBar navbar_menu--item" href="pages/menu.html">Carta</a></span>
-          <span><a class="nav-link miNavBar navbar_menu--item" href="pages/tienda.html">Tienda ingredientes</a></span>
+          <span> <a class="nav-link miNavBar navbar_menu--item" href="pages/tienda.html">Tienda ingredientes</a></span>
           <span><a class="nav-link miNavBar navbar_menu--item" href="pages/recetas.html"><span>Nuestras
                 recetas</a></span>
-
+          <span><a class="nav-link miNavBar navbar_menu--item" href="pages/menu.html"><span>Carta</a></span>
           <div id="carrito" class="dropleft">
 
             <button class="btn p-0 bi bi-cart" type="button">
@@ -57,6 +56,7 @@
                   <tr id="tablaInterior">
                     <th></th>
                     <th class="p-2">Producto</th>
+                    <th class="p-2">Cantidad</th>
                     <th class="p-2">Precio</th>
                   </tr>
                 <tbody id="desplegable" class="m-1">
@@ -215,18 +215,20 @@
 
             <div class="modal-body">
 
-              <form class="d-flex flex-column">
+              <form method="GET" id="form1" class="d-flex flex-column">
                 <div class="form-group">
                   <label for="exampleFormControlInput1">Nombre completo</label>
-                  <input class="w-100 border rounded" type="email" class="form-control" id="exampleFormControlInput1">
+                  <input name="nameUser" class="w-100 border rounded" type="text" class="form-control"
+                    id="exampleFormControlInput1" />
                 </div>
 
                 <div class="form-group d-flex flex-column my-2">
-                  <label for="exampleFormControlInput1">Telefono de Contacto</label>
-                  <input class="border rounded" type="telefono" class="form-control " id="exampleFormControlInput1">
+                  <label for="exampleFormControlInput2">Telefono de Contacto</label>
+                  <input name="telUser" class="border rounded" type="number" class="form-control "
+                    id="exampleFormControlInput2" />
                 </div>
 
-                <select class="form-control form-control-sm my-4 w-100 rounded">
+                <select id="horariosReserva" name="horarios" class="form-control form-control-sm my-4 w-100 rounded">
                   <option>Horario de reserva</option>
                   <option>12:30 a 14:30</option>
                   <option>14:30 a 16:00</option>
@@ -236,14 +238,13 @@
 
                 <div class="form-group">
                   <label for="exampleFormControlTextarea1">Comentarios</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  <textarea name="comentsUser" class="form-control" id="exampleFormControlTextarea1"
+                    rows="3"></textarea>
                 </div>
               </form>
 
               <div class="modal-footer d-flex justify-content-center pt-3">
-                <button class="btn btn-warning" type="button" data-dismiss="modal">
-                  Enviar
-                </button>
+                <button type="submit" form="form1" value="Submit">Submit</button>
               </div>
             </div>
           </div>
