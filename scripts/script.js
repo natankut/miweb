@@ -150,7 +150,7 @@ $(document).ready(function () {
                 `
                 <td><img src="${prod.imagen}"></td><td>${prod.titulo}</td><td><button id="${prod.id}suma" class="shadow m-1 btnSuma">+</button><span>${prod.cantidad}</span><button id="${prod.id}resta" class="shadow m-1 btnResta"> - </button></td>
                 <td class="${prod.precio}">$${prod.precio}</td>
-                <a onclick="removeElement(e)" class="cart-item" id="prod-${prod.id}" href="#"><i class="bi bi-x"></i></a>
+                
                 `
             $('#desplegable').prepend(muestra);
 
